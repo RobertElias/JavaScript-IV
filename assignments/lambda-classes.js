@@ -50,7 +50,7 @@ class Student extends Person{
 
 
 // Project Manager Class
-class ProjectManager extends Instructors {
+class ProjectManager extends Instructor {
   constructor(att){
     super(att);
     this.gradClassName = att.gradClassName;
@@ -95,7 +95,7 @@ const omar = new Instructor ({
   age: 29,
   favLanguage: 'Python',
   specialty: 'Databases',
-  catchPhrase: `SQL all the way`
+  catchPhrase: `SQL all the way`,
 })
 
 //Student Object
@@ -105,7 +105,7 @@ const Claudia = new Student ({
   location: 'Aliso-Viejo, California',
   previousBackground: 'Chemical Engineering',
   className: 'DS-21',
-  favSubjects: 'C#',
+  favSubjects: 'C#, JavaScript',
 });
 
 //Student Object
@@ -115,12 +115,21 @@ const Tony = new Student ({
   location: 'San Juan Capo, California',
   previousBackground: 'Mathematics',
   className: 'DS-21',
-  favSubjects: 'C++',
+  favSubjects: 'C++, Python, Data Structures',
 });
 
 //ProjectManager Object
-
-
+const Sammy = new ProjectManager({
+  name: 'Sammy',
+  location: 'Orange County',
+  age: 33,
+  favLanguage: 'Python',
+  specialty: 'BackEnd Development',
+  catchPhrase: `SQL all the way`,
+  gradClassName: 'CS-1',
+  favInstructor: 'Omar',
+  
+});
 
 //Testing Person Class
 console.log(`new Person is name ${Robert.name}`);
@@ -144,4 +153,8 @@ console.log(Tony.sprintChallenge("React"));
 console.log(Claudia);
 console.log(Claudia.listsSubjects());
 console.log(Claudia.sprintChallenge("Java"));
+
+//Testing Project Manager Class
+
+
 
