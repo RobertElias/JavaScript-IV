@@ -22,7 +22,18 @@ Prototype Refactor
     } 
 }
 
- 
+ /* CharacterStats Class*/ 
+ class CharacterStats extends GameObject {
+    constructor(att) {
+        super(att);
+        this.healthPoints = att.healthPoints;
+    }
+    takeDamage() {
+        return `${this.name} took damage.`;
+    }
+}
+
+
   const mage = new Humanoid({
     createdAt: new Date(),
     dimensions: {
