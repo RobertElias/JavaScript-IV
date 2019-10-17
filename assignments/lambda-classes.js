@@ -29,7 +29,18 @@ class  Instructor extends Person{
     return `${student.name} receives a perfect score on ${subject}.`;
   }
 }
-
+// Student Class
+class student extends Person{
+  constructor(att){
+    super(att);
+    this.previousBackground = att.previousBackground;
+    this.className = att.className;
+    this.favSubjects = att.favSubject;
+  }
+  listsSubjects(){
+    return `${this.name} likes ${this.favSubjects}`
+  }
+}
 
 
 //Person Object
