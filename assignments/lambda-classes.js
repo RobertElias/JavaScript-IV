@@ -56,11 +56,11 @@ class ProjectManager extends Instructor {
     this.gradClassName = att.gradClassName;
     this.favInstructor = att.favInstructor;
   }
-  standUp (slackChannel){
-    return `${name} announces to ${channel}, @channel stand times!`;
+  standUp (channel){
+    return `${this.name} announces to ${channel}, @channel stand times!`;
   }
   debugCode(student, subject){
-    return `${name} debugs ${student.name}'s code on ${subject}!`;
+    return `${this.name} debugs ${student.name}'s code on ${subject}!`;
   }
 }
 
@@ -128,7 +128,7 @@ const Sammy = new ProjectManager({
   catchPhrase: `SQL all the way`,
   gradClassName: 'CS-1',
   favInstructor: 'Omar',
-  
+
 });
 
 //Testing Person Class
@@ -155,6 +155,8 @@ console.log(Claudia.listsSubjects());
 console.log(Claudia.sprintChallenge("Java"));
 
 //Testing Project Manager Class
-
+console.log(Sammy);
+console.log(Sammy.debugCode(Tony, "C++"));
+console.log(Sammy.standUp("CodingRocks"));
 
 
