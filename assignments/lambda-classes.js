@@ -40,6 +40,12 @@ class student extends Person{
   listsSubjects(){
     return `${this.name} likes ${this.favSubjects}`
   }
+  PRAssignment(subject) {
+    return `${this.name} has submitted a PR for ${subject}.`
+  }
+  sprintChallenge(subject){
+    return `${this.name} has begun spring challenge on ${subject}.`
+  }
 }
 
 
@@ -78,6 +84,18 @@ const omar = new Instructor ({
   catchPhrase: `SQL all the way`
 })
 
+//Student Object
+
+const Claudia = new Student ({
+  name: 'Claudia Perez',
+  age: 32,
+  location: 'Aliso-Viejo, California',
+  previousBackground: 'Chemical Engineering',
+  className: 'DS-21',
+  favSubjects: 'Sciences',
+
+});
+
 //Testing Person Class
 console.log(`new Person is name ${Robert.name}`);
 console.log(`new Person is from ${Robert.location}`);
@@ -91,5 +109,5 @@ console.log(fred);
 console.log(fred.speak());
 console.log(omar);
 console.log(omar.speak());
-
 console.log(omar.demo("Python Algorithms."));
+
