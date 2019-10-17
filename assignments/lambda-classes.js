@@ -38,16 +38,31 @@ class Student extends Person{
     this.favSubjects = att.favSubjects;
   }
   listsSubjects(){
-    return `${this.name} likes ${this.favSubjects}`
+    return `${this.name} likes ${this.favSubjects}`;
   }
   PRAssignment(subject) {
-    return `${this.name} has submitted a PR for ${subject}.`
+    return `${this.name} has submitted a PR for ${subject}.`;
   }
   sprintChallenge(subject){
-    return `${this.name} has begun sprint challenge on ${subject}.`
+    return `${this.name} has begun sprint challenge on ${subject}.`;
   }
 }
 
+
+// Project Manager Class
+class ProjectManager extends Instructors {
+  constructor(att){
+    super(att);
+    this.gradClassName = att.gradClassName;
+    this.favInstructor = att.favInstructor;
+  }
+  standUp (slackChannel){
+    return `${name} announces to ${channel}, @channel stand times!`;
+  }
+  debugCode(student, subject){
+    return `${name} debugs ${student.name}'s code on ${subject}!`;
+  }
+}
 
 //Person Object
 const Robert = new Person({
@@ -102,6 +117,10 @@ const Tony = new Student ({
   className: 'DS-21',
   favSubjects: 'C++',
 });
+
+//ProjectManager Object
+
+
 
 //Testing Person Class
 console.log(`new Person is name ${Robert.name}`);
