@@ -32,7 +32,7 @@ class  Instructor extends Person{
 
 
 
-//Person constructor
+//Person Object
 const Robert = new Person({
   name: 'Robert Elias',
   age: 43,
@@ -47,7 +47,7 @@ const Cynthia = new Person({
 })
 
 
-//Instructor  constructor
+//Instructor  Object
 
 const fred = new Instructor({
   name: 'Fred',
