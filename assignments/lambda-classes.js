@@ -58,6 +58,15 @@ const fred = new Instructor({
   catchPhrase: `Don't forget the homies`
 });
 
+const omar = new Instructor ({
+  name: 'Omar',
+  location: 'San Juan Cap',
+  age: 29,
+  favLanguage: 'Python',
+  specialty: 'Databases',
+  catchPhrase: `SQL all the way`
+})
+
 //Testing Person Class
 console.log(`new Person is name ${Robert.name}`);
 console.log(`new Person is from ${Robert.location}`);
@@ -69,3 +78,7 @@ console.log(`new Person is from ${Cynthia.location}`);
 
 console.log(fred);
 console.log(fred.speak());
+console.log(omar);
+console.log(omar.speak());
+
+console.log(omar.demo("Python Algorithms."));
