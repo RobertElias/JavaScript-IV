@@ -30,12 +30,12 @@ class  Instructor extends Person{
   }
 }
 // Student Class
-class student extends Person{
+class Student extends Person{
   constructor(att){
     super(att);
     this.previousBackground = att.previousBackground;
     this.className = att.className;
-    this.favSubjects = att.favSubject;
+    this.favSubjects = att.favSubjects;
   }
   listsSubjects(){
     return `${this.name} likes ${this.favSubjects}`
@@ -44,7 +44,7 @@ class student extends Person{
     return `${this.name} has submitted a PR for ${subject}.`
   }
   sprintChallenge(subject){
-    return `${this.name} has begun spring challenge on ${subject}.`
+    return `${this.name} has begun sprint challenge on ${subject}.`
   }
 }
 
@@ -90,7 +90,7 @@ const Claudia = new Student ({
   location: 'Aliso-Viejo, California',
   previousBackground: 'Chemical Engineering',
   className: 'DS-21',
-  favSubjects: 'Sciences',
+  favSubjects: 'C#',
 });
 
 //Student Object
@@ -111,10 +111,18 @@ console.log(`new Person is name ${Cynthia.name}`);
 console.log(`new Person is from ${Cynthia.location}`);
 
 //Testing Instructor Class
-
 console.log(fred);
 console.log(fred.speak());
 console.log(omar);
 console.log(omar.speak());
 console.log(omar.demo("Python Algorithms."));
+
+//Testing Student Class
+console.log(Tony);
+console.log(Tony.listsSubjects());
+console.log(Tony.sprintChallenge("React"));
+
+console.log(Claudia);
+console.log(Claudia.listsSubjects());
+console.log(Claudia.sprintChallenge("Java"));
 
