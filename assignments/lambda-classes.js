@@ -65,7 +65,6 @@ const Cynthia = new Person({
 
 
 //Instructor  Object
-
 const fred = new Instructor({
   name: 'Fred',
   location: 'Bedrock',
@@ -74,7 +73,7 @@ const fred = new Instructor({
   specialty: 'Front-end',
   catchPhrase: `Don't forget the homies`
 });
-
+//Instructor  Object
 const omar = new Instructor ({
   name: 'Omar',
   location: 'San Juan Cap',
@@ -85,7 +84,6 @@ const omar = new Instructor ({
 })
 
 //Student Object
-
 const Claudia = new Student ({
   name: 'Claudia Perez',
   age: 32,
@@ -93,7 +91,16 @@ const Claudia = new Student ({
   previousBackground: 'Chemical Engineering',
   className: 'DS-21',
   favSubjects: 'Sciences',
+});
 
+//Student Object
+const Tony = new Student ({
+  name: 'Tony Bracamontes',
+  age: 35,
+  location: 'San Juan Capo, California',
+  previousBackground: 'Mathematics',
+  className: 'DS-21',
+  favSubjects: 'C++',
 });
 
 //Testing Person Class
